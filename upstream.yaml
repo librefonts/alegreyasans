@@ -1,0 +1,1830 @@
+AlegreyaSans-Black.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: &id003 [note]
+    targets: &id002 [upstream-ttx]
+    tool: fontTools
+  fixed:
+  - &id001
+    autofix: true
+    err_msg: '''AlegreyaSans-Black.otf'' != ''AlegreyaSans-Black'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: &id007 [note]
+    targets: &id008 [upstream, upstream-ttx]
+    tool: lint
+  - *id001
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: &id010 [note]
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: &id004 [note]
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: &id005 [note]
+    targets: &id006 [upstream-ttx]
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: &id011 [note]
+    targets: &id012 [upstream-ttx]
+    tool: TTFont
+AlegreyaSans-Black.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id009
+    autofix: true
+    err_msg: '''AlegreyaSans-Black.ttf'' != ''AlegreyaSansBlack-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id009
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-BlackItalic.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  fixed:
+  - &id013
+    autofix: true
+    err_msg: '''AlegreyaSans-BlackItalic.otf'' != ''AlegreyaSans-BlackItalic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id013
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-BlackItalic.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id014
+    autofix: true
+    err_msg: '''AlegreyaSans-BlackItalic.ttf'' != ''AlegreyaSansBlack-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id014
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-Bold.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  fixed:
+  - &id015
+    autofix: true
+    err_msg: '''AlegreyaSans-Bold.otf'' != ''AlegreyaSans-Bold'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id015
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-Bold.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id016
+    autofix: true
+    err_msg: '''AlegreyaSans-Bold.ttf'' != ''AlegreyaSans-Bold'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id016
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-BoldItalic.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  fixed:
+  - &id017
+    autofix: true
+    err_msg: '''AlegreyaSans-BoldItalic.otf'' != ''AlegreyaSans-BoldItalic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id017
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-BoldItalic.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id018
+    autofix: true
+    err_msg: '''AlegreyaSans-BoldItalic.ttf'' != ''AlegreyaSans-BoldItalic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id018
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-ExtraBold.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  fixed:
+  - &id019
+    autofix: true
+    err_msg: '''AlegreyaSans-ExtraBold.otf'' != ''AlegreyaSans-ExtraBold'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id019
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-ExtraBold.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id020
+    autofix: true
+    err_msg: '''AlegreyaSans-ExtraBold.ttf'' != ''AlegreyaSansExtraBold-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id020
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-ExtraBoldItalic.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  fixed:
+  - &id021
+    autofix: true
+    err_msg: '''AlegreyaSans-ExtraBoldItalic.otf'' != ''AlegreyaSans-ExtraBoldItalic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id021
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-ExtraBoldItalic.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id022
+    autofix: true
+    err_msg: '''AlegreyaSans-ExtraBoldItalic.ttf'' != ''AlegreyaSansExtraBold-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id022
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-Italic.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  fixed:
+  - &id023
+    autofix: true
+    err_msg: '''AlegreyaSans-Italic.otf'' != ''AlegreyaSans-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id023
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-Italic.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id024
+    autofix: true
+    err_msg: '''AlegreyaSans-Italic.ttf'' != ''AlegreyaSans-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id024
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-Light.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  fixed:
+  - &id025
+    autofix: true
+    err_msg: '''AlegreyaSans-Light.otf'' != ''AlegreyaSans-Light'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id025
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-Light.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id026
+    autofix: true
+    err_msg: '''AlegreyaSans-Light.ttf'' != ''AlegreyaSansLight-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id026
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-LightItalic.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  fixed:
+  - &id027
+    autofix: true
+    err_msg: '''AlegreyaSans-LightItalic.otf'' != ''AlegreyaSans-LightItalic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id027
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-LightItalic.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id028
+    autofix: true
+    err_msg: '''AlegreyaSans-LightItalic.ttf'' != ''AlegreyaSansLight-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id028
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-Medium.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  fixed:
+  - &id029
+    autofix: true
+    err_msg: '''AlegreyaSans-Medium.otf'' != ''AlegreyaSans-Medium'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id029
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-Medium.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id030
+    autofix: true
+    err_msg: '''AlegreyaSans-Medium.ttf'' != ''AlegreyaSansMedium-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id030
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-MediumItalic.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  fixed:
+  - &id031
+    autofix: true
+    err_msg: '''AlegreyaSans-MediumItalic.otf'' != ''AlegreyaSans-MediumItalic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id031
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-MediumItalic.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id032
+    autofix: true
+    err_msg: '''AlegreyaSans-MediumItalic.ttf'' != ''AlegreyaSansMedium-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id032
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-Regular.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  fixed:
+  - &id033
+    autofix: true
+    err_msg: '''AlegreyaSans-Regular.otf'' != ''AlegreyaSans-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id033
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-Regular.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id034
+    autofix: true
+    err_msg: '''AlegreyaSans-Regular.ttf'' != ''AlegreyaSans-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id034
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-Thin.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  fixed:
+  - &id035
+    autofix: true
+    err_msg: '''AlegreyaSans-Thin.otf'' != ''AlegreyaSans-Thin'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id035
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-Thin.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id036
+    autofix: true
+    err_msg: '''AlegreyaSans-Thin.ttf'' != ''AlegreyaSansThin-Regular'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id036
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-ThinItalic.otf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''name'', ''cmap'', ''post'', ''CFF '', ''GDEF'', ''GPOS'', ''GSUB'',
+      ''hmtx'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  fixed:
+  - &id037
+    autofix: true
+    err_msg: '''AlegreyaSans-ThinItalic.otf'' != ''AlegreyaSans-ThinItalic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id037
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+AlegreyaSans-ThinItalic.ttf.ttx:
+  error: []
+  failure:
+  - autofix: false
+    err_msg: '''EPAR'' not found in [''GlyphOrder'', ''head'', ''hhea'', ''maxp'',
+      ''OS/2'', ''hmtx'', ''cmap'', ''fpgm'', ''prep'', ''cvt '', ''loca'', ''glyf'',
+      ''name'', ''post'', ''gasp'', ''FFTM'', ''GDEF'', ''GPOS'', ''GSUB'']'
+    methodDoc: Check If font has EPAR table
+    methodName: test_epar_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id003
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: Font contains incorrectly named glyph mu#1
+    methodDoc: Font doesnt contain duplicated glyphs. When fontbakery has resulted
+      files with GlyphID <glyphname>#<int> generated, It can't be installed on some
+      Mac OS X. For details see https://github.com/girish-dalvi/Ek-Mukta/issues/1
+    methodName: test_ttx_doesnt_contain_duplicate_glyphs
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id004
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: 'Glyph ".null" does not comply conventions. A glyph name may be up to
+      31 characters in length, must be entirely comprised of characters from the following
+      set: A-Z a-z 0-9 .(period) _(underscore). and must not start with a digit or
+      period. The only exception is the special character ".notdef". "twocents", "a1",
+      and "_" are valid glyph names. "2cents" and ".twocents" are not.'
+    methodDoc: GlyphName length < 30 and does contain allowed chars only
+    methodName: test_glyphname_does_not_contain_disallowed_chars
+    name: bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars
+    tags: *id005
+    targets: *id006
+    tool: lint
+  fixed:
+  - &id038
+    autofix: true
+    err_msg: '''AlegreyaSans-ThinItalic.ttf'' != ''AlegreyaSansThin-Italic'''
+    methodDoc: Source TTF Font filename equals family style
+    methodName: test_source_ttf_font_filename_equals_familystyle
+    name: bakery_lint.tests.upstream.test_font_filename_eq_familystyle
+    tags: *id007
+    targets: *id008
+    tool: lint
+  - *id038
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: This very important test checking if OS/2 is in keys method
+    methodName: test_os2_in_keys
+    name: bakery_lint.tests.upstream.test_check_ttx_requirements
+    tags: *id010
+    targets: *id002
+    tool: fontTools
+  - autofix: false
+    err_msg: ''
+    methodDoc: The font corresponds the font family naming recommendation. See http://forum.fontlab.com/index.php?topic=313.0
+    methodName: test_ttx_family_naming_recommendation
+    name: bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations
+    tags: *id011
+    targets: *id012
+    tool: TTFont
+Project:
+  error: []
+  failure: []
+  fixed: []
+  passed: true
+  success:
+  - autofix: false
+    err_msg: ''
+    methodDoc: Check that diacritic glyph are made completely with composite
+    methodName: test_diacritic_made_as_component
+    name: bakery_lint.tests.upstream.test_diacritic
+    tags: [note]
+    targets: &id039 [upstream-repo]
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: Check that diacritic glyph are made completely with mark method
+    methodName: test_diacritic_made_as_mark_to_mark
+    name: bakery_lint.tests.upstream.test_diacritic
+    tags: [note]
+    targets: *id039
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: Check that diacritic glyph are made completely with flat method
+    methodName: test_diacritic_made_as_own_glyphs
+    name: bakery_lint.tests.upstream.test_diacritic
+    tags: [note]
+    targets: *id039
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: Check that glyphs has same number of contours across family
+    methodName: test_font_prepolation_glyph_contours
+    name: bakery_lint.tests.upstream.test_prepolation
+    tags: [note]
+    targets: &id040 [upstream-repo]
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: Check that glyphs has same number of points across family
+    methodName: test_font_prepolation_glyph_points
+    name: bakery_lint.tests.upstream.test_prepolation
+    tags: [note]
+    targets: *id040
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: Check glyph names are all the same across family
+    methodName: test_font_test_prepolation_glyph_names
+    name: bakery_lint.tests.upstream.test_prepolation
+    tags: [note]
+    targets: *id040
+    tool: lint
+  - autofix: false
+    err_msg: ''
+    methodDoc: Repository does contain bakery.yaml configuration file
+    methodName: test_bakery_yaml_exists
+    name: bakery_lint.tests.upstream.test_check_upstream_sources
+    tags: [note]
+    targets: &id041 [upstream-repo]
+    tool: FontBakery
+  - autofix: false
+    err_msg: ''
+    methodDoc: Are all copyright notices the same in all styles?
+    methodName: test_copyright_notices_same_across_family
+    name: bakery_lint.tests.upstream.test_check_upstream_sources
+    tags: [note]
+    targets: *id041
+    tool: FontBakery
+  - autofix: false
+    err_msg: ''
+    methodDoc: Repository does containDESCRIPTION.en_us.html file
+    methodName: test_description_html_exists
+    name: bakery_lint.tests.upstream.test_check_upstream_sources
+    tags: [note]
+    targets: *id041
+    tool: FontBakery
+  - autofix: false
+    err_msg: ''
+    methodDoc: Repository does contain FONTLOG.txt file
+    methodName: test_fontlog_txt_exists
+    name: bakery_lint.tests.upstream.test_check_upstream_sources
+    tags: [note]
+    targets: *id041
+    tool: FontBakery
+  - autofix: false
+    err_msg: ''
+    methodDoc: Repository does contain METADATA.json file
+    methodName: test_metadata_json_exists
+    name: bakery_lint.tests.upstream.test_check_upstream_sources
+    tags: [note]
+    targets: *id041
+    tool: FontBakery

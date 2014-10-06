@@ -1,0 +1,14 @@
+commit: HEAD
+process_files: [AlegreyaSans-MediumItalic.ttf.ttx, AlegreyaSans-BlackItalic.ttf.ttx,
+  AlegreyaSans-Thin.ttf.ttx, AlegreyaSans-ThinItalic.ttf.ttx, AlegreyaSans-Light.ttf.ttx,
+  AlegreyaSans-Black.ttf.ttx, AlegreyaSans-Regular.ttf.ttx, AlegreyaSans-ExtraBoldItalic.ttf.ttx,
+  AlegreyaSans-ExtraBold.ttf.ttx, AlegreyaSans-Medium.ttf.ttx, AlegreyaSans-LightItalic.ttf.ttx,
+  AlegreyaSans-Bold.ttf.ttx, AlegreyaSans-Italic.ttf.ttx, AlegreyaSans-BoldItalic.ttf.ttx,
+  src/AlegreyaSans-ExtraBoldItalic.otf.ttx, src/AlegreyaSans-Light.otf.ttx, src/AlegreyaSans-BlackItalic.otf.ttx,
+  src/AlegreyaSans-Medium.otf.ttx, src/AlegreyaSans-MediumItalic.otf.ttx, src/AlegreyaSans-Italic.otf.ttx,
+  src/AlegreyaSans-Black.otf.ttx, src/AlegreyaSans-Regular.otf.ttx, src/AlegreyaSans-ThinItalic.otf.ttx,
+  src/AlegreyaSans-ExtraBold.otf.ttx, src/AlegreyaSans-Thin.otf.ttx, src/AlegreyaSans-BoldItalic.otf.ttx,
+  src/AlegreyaSans-Bold.otf.ttx, src/AlegreyaSans-LightItalic.otf.ttx]
+pyftsubset: --notdef-outline --name-IDs=* --hinting
+subset: [latin]
+ttfautohint: -l 7 -r 28 -G 50 -x 13 -w "G"
